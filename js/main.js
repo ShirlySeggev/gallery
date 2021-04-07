@@ -1,11 +1,8 @@
 'use strict';
 
-initPage();
-
 function initPage() {
     renderProjects();
     renderModals();
-
 }
 
 function renderProjects() {
