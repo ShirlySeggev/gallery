@@ -1,0 +1,113 @@
+
+body {
+    color:rgb(110,0,108);
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn{
+    border-width:0px ;
+    border-style: solid;
+    border-color:  rgb(145,39,143);
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(110,0,108);
+    background-color: rgb(246,131,112);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.next-num {
+    width: 200px;
+    height: 30px;
+    top: 10px;
+    margin: 1px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    right:100px;
+    background-color: rgb(246,131,112);
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+
+}
+
+.timer {
+    width: 80px;
+    height: 30px;
+    left: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+    border-radius: 40%;
+    background-color: rgb(246,131,112);
+    /* text-align: center; */
+    align-items: center; 
+    justify-content: center;
+    display: none;
+    /* display: flex; */
+    
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.board tr, .board td {
+    border:3px solid rgb(145,39,143);
+    text-align: center;
+    font-size: 30px;
+    background-color:rgb(110,0,108);
+    color:rgb(254,171,181);
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+
+.board td:hover {
+    background-color: rgb(145,39,143);
+    cursor: pointer;
+}
+
+td.pressed {
+    background-color: rgb(207,151,215);
+    color:rgb(212,212,212);
+}
+
+.start-btn{
+    background-color:  rgb(246,131,112);
+    border: 3px solid rgb(110,0,108);; 
+    border-radius: 50px;
+    color:rgb(110,0,108); 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 50%; 
+    display: inline-block; 
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    display: none;
+}
+
+.easy{
+    background-color:white; 
+}
+
+.next-num span{
+    font-weight: bold;
+    font-size: 20px;
+}
+

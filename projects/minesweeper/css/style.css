@@ -1,0 +1,192 @@
+
+body {
+    color:#464646;
+    background-image: url("https://technology.inquirer.net/files/2017/10/the-most-famous-windows-wallpaper-ever-turns-20-505668-2.jpg");
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    border-width:0px ;
+    border-style: solid;
+    border-color:  #464646;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#464646;
+    background-color: #F44336;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mid-container>*{
+    display: flex;
+    align-items: center;
+}
+
+.mid-container .mines {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color:#F44336;
+}
+
+.mid-container .timer {
+    font-size: 25px;
+    font-weight: bold;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F44336;
+}
+
+.smile{
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table{
+    margin:auto;
+    font-weight: bold;
+}
+
+.board tr, .board td {
+    border:3px solid #7E7E7E;
+    text-align: center;
+    font-size: 15px;
+    background-color: #AAAAAA;
+    color: #464646;
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+}
+
+.begginer{
+    background-color:white; 
+    border-width: 2px;
+}
+
+.lives{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: #F44336;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+}
+
+.lives span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.modal {
+    background-color: white;
+    display:none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.modal button {
+    float:right;
+}
+
+.hint{
+    margin-top:10px;
+    height: 60px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width:3px ;
+    border-style: solid;
+    border-color:  #464646;
+}
+
+
+.best-scores{
+    top: 100px;
+    margin:auto;
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+}
+
+.safe-click{
+    margin-top:10px;
+    height:30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-width:3px ;
+    border-style: solid;
+    border-color:  #464646;
+}
+
+.safe{
+    color: white;
+}
+
+.safe span{
+    font-weight: bold;
+}
+
+.manual{
+    margin-top:10px;
+    height:30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-width:3px ;
+    border-style: solid;
+    border-color:  #464646;
+}
+
+.manual-count{
+    color: white;
+    display: none;
+}
+
+.manual-count span{
+    font-weight: bold;
+}
+
+.manual-text{
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+.undo{
+    height:30px;
+    font-size: 20px;
+    border-width:3px ;
+    border-color:  #464646;
+    margin:10px 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+

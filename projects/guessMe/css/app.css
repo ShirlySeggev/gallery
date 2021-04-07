@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #73aedb;
+    text-align: center;
+    color: #fcf064;
+    font-size: 3em;
+    height: 400px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: lightblue;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.ending-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ending-form input {
+    margin: 10px;
+    font-size: 1em;
+}
+
+.ending-form label {
+    font-weight: bold;
+}
+
+.ending-form input,
+label {
+    height: 40px;
+    width: 300px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.btn-start {
+    background-color: #007BFF;
+}
+
+.btn-playAgain {
+    background-color: #007BFF;
+}
+
+.btn-yes {
+    background-color: #28a745;
+}
+
+.btn-no {
+    background-color: #ff0018;
+}
+
+.btn-add-guess {
+    background-color: #007BFF;
+    width: 250px;
+    color: white;
+}
+
+.speech-bubble {
+    position: relative;
+    margin: .5em auto;
+    padding: 1em;
+    width: 10em;
+    height: 4em;
+    border-radius: .25em;
+    transform: rotate(-4deg) rotateY(15deg);
+    background: #629bdd;
+    font: 2em/4 Century Gothic, Verdana, sans-serif;
+    text-align: center;
+}
+
+.speech-bubble:before,
+.speech-bubble:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin html</title>
+</head>
+
+<body onload="initAdmin()">
+    <header>
+        <h1></h1>
+    </header>
+
+    <section class="users-sort">
+        <h3>Sort</h3>
+        <select name="usersSort" onchange="onSetSort(this.value)">
+            <option value="txt">Name</option>
+            <option value="lastLogin">Last login</option>
+        </select>
+    </section>
+
+    <section class='users-table'>
+        <table border="0">
+            <tbody class="users-container">
+            </tbody>
+        </table>
+    </section>
+
+
+    <script src="js/storage.service.js"></script>
+    <script src="js/user.service.js"></script>
+    <script src="js/admin.controller.js"></script>
+</body>
+
+</html>
