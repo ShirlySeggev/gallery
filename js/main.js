@@ -16,7 +16,7 @@ function renderProjects() {
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/${proj.id}.JPG" alt="">
+                        <img class="img-fluid" src="img/portfolio/${proj.id}.JPG" alt="" style="height:300px;width:100%;object-fit:cover;">
                         </a>
                         <div class="portfolio-caption">
                         <h4>${proj.name}</h4>
@@ -48,7 +48,7 @@ function renderModals() {
                     <!-- Project Details Go Here -->
                     <h2>${proj.name}</h2>
                     <p class="item-intro text-muted">${proj.title}</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}.JPG" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}.JPG" alt="" style="height:500px;width:500px;object-fit:cover;">
                     <p>${proj.desc}</p>
                     <ul class="list-inline">
                       <li>Date: ${proj.publishedAt}</li>
@@ -70,4 +70,15 @@ function renderModals() {
     });
     var elContainer = document.querySelector('.modals-container');
     elContainer.innerHTML = modalHtml.join('');
+}
+
+
+function onContact(ev) {
+    ev.preventDefault();
+    var sendTo = 'shirlyarcusin@gmail.com';
+    var subject = document.querySelector('#subject').value;
+    var body = document.querySelector('#textarea').value;
+
+    var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${sendTo}&su=${subject}&body=${body}`;
+    window.open(url);
 }
