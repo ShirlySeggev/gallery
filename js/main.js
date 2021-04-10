@@ -1,9 +1,16 @@
 'use strict';
 
-function initPage() {
+// function initPage() {
+//     renderProjects();
+//     renderModals();
+// }
+
+$(document).ready(function() {
     renderProjects();
     renderModals();
-}
+    $('.offcanvas-btn').click(openCanvas);
+    $('.my-form').submit(onContact);
+})
 
 function renderProjects() {
     var projs = getProjectsToDisplay();
@@ -25,8 +32,9 @@ function renderProjects() {
                         </div>
                         `;
     });
-    var elPorfolio = document.querySelector('.project-container');
-    elPorfolio.innerHTML = cardHtml.join('');
+    $('.project-container').html(cardHtml);
+    // var elPorfolio = document.querySelector('.project-container');
+    // elPorfolio.innerHTML = cardHtml.join('');
 }
 
 function renderModals() {
@@ -68,16 +76,19 @@ function renderModals() {
       </div>
                 `;
     });
-    var elContainer = document.querySelector('.modals-container');
-    elContainer.innerHTML = modalHtml.join('');
+    $('.modals-container').html(modalHtml);
+    // var elContainer = document.querySelector('.modals-container');
+    // elContainer.innerHTML = modalHtml.join('');
 }
 
 
 function onContact(ev) {
     ev.preventDefault();
     var sendTo = 'shirlyarcusin@gmail.com';
-    var subject = document.querySelector('#subject').value;
-    var body = document.querySelector('#textarea').value;
+    // var subject = document.querySelector('#subject').value;
+    var subject = $('#subject').val();
+    // var body = document.querySelector('#textarea').value;
+    var body = $('#textarea').val();
 
     var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${sendTo}&su=${subject}&body=${body}`;
     window.open(url);
